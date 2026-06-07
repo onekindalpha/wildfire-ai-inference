@@ -82,6 +82,7 @@ deployments/
 docs/
   portfolio/       발표 및 포트폴리오 문서
   data_pipeline.md 데이터 처리 및 라벨 생성 과정 메모
+  demo.md          YOLO 이미지/영상 데모 실행 방법
   inference.md     영상/스트림 추론 구성 메모
 
 configs/       USB 재마운트 후 Docker/conda 설정 파일 보관 예정
