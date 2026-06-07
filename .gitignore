@@ -1,0 +1,41 @@
+# macOS / editor
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+
+# Python
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Secrets
+.env
+*.pem
+*key*.json
+*secret*
+
+# Model weights and generated runs
+*.pt
+*.pth
+*.onnx
+runs/
+weights/
+models/*
+!models/.gitkeep
+
+# Large archives / data
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.nc
+*.tif
+*.tiff
+data/raw/
+data/external/
+
+# Logs
+*.log
+

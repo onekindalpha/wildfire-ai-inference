@@ -1,0 +1,17 @@
+ultralytics
+pandas
+numpy
+requests
+boto3
+botocore
+tqdm
+rasterio
+geopandas
+shapely
+pyproj
+xarray
+rioxarray
+pystac-client
+stackstac
+elasticsearch
+
