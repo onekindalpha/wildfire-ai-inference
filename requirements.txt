@@ -14,4 +14,6 @@ rioxarray
 pystac-client
 stackstac
 elasticsearch
-
+fastapi
+uvicorn
+python-multipart

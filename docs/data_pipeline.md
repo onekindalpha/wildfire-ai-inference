@@ -35,6 +35,19 @@ Relevant scripts:
 - `src/colab/firms_to_buffers_geojson.py`
 - `src/colab/buffers_to_raster_masks.py`
 - `src/colab/buffers_to_coco_timeslots.py`
+- `scripts/prepare_usb_yolo_dataset.py`
+
+## USB YOLO Dataset Cleanup
+
+The USB `yolo.7z` dataset contains labels with class id `15`. In its `classes.txt`, class `15` maps to `fire`, so the local training cleanup remaps `15 -> 0` and builds a single-class `fire` dataset.
+
+This cleanup is intentionally kept as a script instead of committing the extracted dataset:
+
+```bash
+python scripts/prepare_usb_yolo_dataset.py \
+  --input data/external/yolo_usb \
+  --output data/external/yolo_fire_clean
+```
 
 ## Quality Checks
 
@@ -45,4 +58,3 @@ Relevant scripts:
 - `src/colab/firms_qc_report.py`
 - `src/local/yolo_run_forensics.py`
 - `src/local/summarize_yolo_runs.py`
-

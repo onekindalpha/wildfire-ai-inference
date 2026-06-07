@@ -84,6 +84,10 @@ docs/
   data_pipeline.md 데이터 처리 및 라벨 생성 과정 메모
   demo.md          YOLO 이미지/영상 데모 실행 방법
   inference.md     영상/스트림 추론 구성 메모
+  service_demo.md  FastAPI 데모 서비스 실행 방법
+
+app/
+  api.py           이미지 업로드 기반 YOLO 데모 API
 
 configs/       USB 재마운트 후 Docker/conda 설정 파일 보관 예정
 models/        placeholder only; model weights are not committed
@@ -114,6 +118,17 @@ Segmentation:
 ```bash
 yolo segment train data=data/yolo_dataset/segment/data.yaml model=yolo11n-seg.pt imgsz=736 epochs=50
 ```
+
+## Demo Service
+
+학습된 `best.pt`가 있으면 FastAPI로 이미지 업로드 데모를 실행할 수 있습니다.
+
+```bash
+export YOLO_WEIGHTS=/path/to/best.pt
+uvicorn app.api:app --reload --host 0.0.0.0 --port 8000
+```
+
+브라우저에서 `http://localhost:8000/docs`를 열고 `POST /predict/image`에 테스트 이미지를 업로드하면 됩니다.
 
 ## Notes
 
