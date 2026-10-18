@@ -3,7 +3,8 @@
 산불 탐지 실험에서 사용한 FIRMS/Himawari 데이터 수집, 라벨 생성, YOLO 학습/추론, 서버 산출물을 정리한 저장소입니다.
 
 초기 목표는 위성 기반 산불 이벤트 데이터를 모으고, 불점 좌표를 학습 가능한 라벨 형태로 변환한 뒤, YOLO 모델과 간단한 추론 워커로 이미지/영상 입력을 탐지하는 흐름을 만드는 것이었습니다.
-[![데모 영상](https://drive.google.com/thumbnail?id=1w_LVuiQmbCbetNeR_LyJvWb4kwx8i8uK&sz=w800)](https://drive.google.com/file/d/1w_LVuiQmbCbetNeR_LyJvWb4kwx8i8uK/view)
+
+https://github.com/user-attachments/assets/6fb02a9d-8677-4bad-954e-207ce68c4a50
 
 ## What This Repository Contains
 
